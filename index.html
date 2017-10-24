@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="Your description goes here">
+    	<meta name="keywords" content="one, two, three">
+
+		<title>iCalculator</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+
+
+	</head>
+	<body>
+		<div class="calculator">
+      <div>
+        <h1 id="answer"></h1>
+      </div>
+		  <div>
+		  	<button class="greyBox" onclick="clearScreen()">c</button>
+		    <button class="greyBox" onclick="negative()">+/-</button>
+		    <button class="greyBox" onclick="percent()">%</button>
+		    <button class="orangeBox" onclick="division()">/</button>
+		    <button onclick="addToScreen('7')">7</button>
+		    <button onclick="addToScreen('8')">8</button>
+		    <button onclick="addToScreen('9')">9</button>
+		    <button class="orangeBox" onclick="multiplication()">x</button>
+		    <button onclick="addToScreen('4')">4</button>
+		    <button onclick="addToScreen('5')">5</button>
+		    <button onclick="addToScreen('6')">6</button>
+		    <button class="orangeBox" onclick="subtraction()">-</button>
+		    <button onclick="addToScreen('1')">1</button>
+		    <button onclick="addToScreen('2')">2</button>
+		    <button onclick="addToScreen('3')">3</button>
+		    <button class="orangeBox" onclick="addition()">+</button>
+			<br>
+		    <button class="zero" onclick="addToScreen('0')">0</button>
+		    <button onclick="addToScreen('.')">.</button>
+		    <button class="orangeBox" onclick="equals()">=</button>
+		  </div>
+		</div>
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script src="js/main.js" type="text/javascript"></script>
+	</body>
+</html>
